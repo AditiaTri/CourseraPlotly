@@ -1,0 +1,36 @@
+---
+title: "R with Plotly"
+author: "Aditia Trihadian"
+date: "3/16/2020"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Intro
+
+Title : R with Plotly
+
+Author: Aditia Trihadian
+
+Date  : 16 March 2020
+
+## Plotly
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(plotly)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+plotly_widget <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+plotly_widget
+```
+
+## Thanks
+
+Thank you!
+
